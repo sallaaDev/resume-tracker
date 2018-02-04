@@ -1,11 +1,15 @@
+'use strict'
+
 const app = require('express')();
 
-const mongooes = require('mongoose');
+const mongoose = require('mongoose');
 const keys = require('./config/devKey.js');
 
-mongooes.connect(keys.mongoKey);
+mongoose.connect(keys.mongoKey);
+let connectionStatus = mongoose.connection.readyState;
+console.log(connectionStatus);
 
-app.get('/', (req, res) => {
+apptate would return 1 if already connected.get('/', (req, res) => {
     res.send('resume stuff');
 });
 
