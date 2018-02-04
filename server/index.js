@@ -1,4 +1,10 @@
 const app = require('express')();
+
+const mongooes = require('mongoose');
+const keys = require('./config/devKey.js');
+
+mongooes.connect(keys.mongoKey);
+
 app.get('/', (req, res) => {
     res.send('resume stuff');
 });
