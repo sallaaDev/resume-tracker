@@ -3,13 +3,15 @@
 const app = require('express')();
 
 const mongoose = require('mongoose');
-const keys = require('./config/devKey.js');
+const keys = require('./config/devKeys.js');
 
-mongoose.connect(keys.mongoKey);
-let connectionStatus = mongoose.connection.readyState;
-console.log(connectionStatus);
+mongoose.connect(keys.mongoKeay,function(error){
+	
+	console.log(mongoose.connection.readyState);
 
-apptate would return 1 if already connected.get('/', (req, res) => {
+});
+
+app.get('/', (req, res) => {
     res.send('resume stuff');
 });
 
