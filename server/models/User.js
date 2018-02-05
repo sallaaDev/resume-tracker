@@ -3,16 +3,11 @@ const mongoose = require('mongoose');
 
 // Create schema 
 let User = mongoose.Schema({
-	name: {
-	
 	firstName: String,
-	lastName: String
-	
-	},
-
-	ApplicationCount: Number,
+	lastName: String,
+	email: String,
+	lastActive: Date,
 	AccountCreated: Date,
-		
 });
 
 //export user schema
