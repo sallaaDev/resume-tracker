@@ -3,7 +3,7 @@
 const app = require('express')();
 
 const mongoose = require('mongoose');
-const keys = require('./config/devKeys.js');
+const keys = require('./config/devKeys');
 
 mongoose.connect(keys.mongoKeay,function(error){
 	
