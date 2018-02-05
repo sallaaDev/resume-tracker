@@ -1,15 +1,18 @@
 // get mongoose
 const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 // Create schema 
-let User = mongoose.Schema({
-	firstName: String,
-	lastName: String,
-	email: String,
-	lastActive: Date,
-	AccountCreated: Date,
+const User = mongoose.Schema({
+		firstName: String,
+		lastName: String,
+		email: String,
+		googleId: String,
+		lastActive: Date,
+		AccountCreated: Date
 });
 
-//export user schema
-module.exports = User;
+//model user schema
+mongoose.model('users', User);
+
 
