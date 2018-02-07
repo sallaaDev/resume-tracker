@@ -9,7 +9,6 @@ const User = mongoose.Schema({
 		email: String,
 		googleId: String,
 		lastActive: Date,
-		AccountCreated: Date
 });
 
 //model user schema
