@@ -6,6 +6,7 @@ const keys = require('./config/keys');
 
 require('./models/User');
 require('./services/passport');
+
 mongoose.connect(keys.mongoURI);
 
 app.use(bodyParser.json()); 
