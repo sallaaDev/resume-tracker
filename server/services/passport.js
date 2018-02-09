@@ -36,23 +36,24 @@ passport.use(
 
       const authClient = new OAuth2(keys.googleClientID, keys.googleClientSecret, "/");
       authClient.setCredentials({ access_token: accessToken, refresh_token: refreshToken });
-      Gmail.users.messages.list({ userId: 'me', auth:authclient }, function err(err, response){
+      Gmail.users.messages.list({ userId: 'me', auth:authClient }, function err(err, response){
       console.log("ERRROR " + "   " + err);
-      console.log("RESPONSE" + "   "  + response);
+     // console.log("RESPONSE" + "   "  + response);
+      handleResponse(response);	      
       });
 
 
       console.log(profile);
       if(alreadyUser) {
-      let authclient = new OAuth2(keys.googleClientID,keys.googleClientSecret, "/");
+      const authclient = new OAuth2(keys.googleClientID,keys.googleClientSecret, "/");
       console.log(accessToken + "   TOKEN   " + refreshToken);	
 
       authclient.setCredentials({ access_token: accessToken, refresh_token: refreshToken });
-      gmail.users.messages.list({ userId:'me', auth: authclient, maxResults:10 }, function err(err, response){
+      Gmail.users.messages.list({ userId:'me', auth: authclient, maxResults:10 }, function err(err, response){
       console.log("ERRROR " + "   " + err);	
-      console.log(response);
+      //console.log(response);
+      handleResponse(response,mygmailclient);	      
  	    });
-
       return done(null, alreadyUser);
       }
 
@@ -67,4 +68,40 @@ passport.use(
     }
   )
 );
+
+
+
+function handleResponse(response){
+
+	
+   let data = response.data.messages;
+   let idlist = new Array();
+	
+	 for(let prop in data){
+	 if(data.hasOwnProperty(prop)){
+         //console.log(data[prop]);
+	 idlist.push(data[prop]); 
+		 } 
+	 
+	 }
+
+	for(let i = 0 ; i < 2; i++){
+
+	let messageitem = getMessage('me',idlist[i].id,function(response){
+		console.log(response);
+	});
+	}
+}
+
+function getMessage(userId,messageId,callback){
+let message = Gmail.users.messages.get({
+ 'userId': userId,
+	'id': messageId
+});
+callback(message);
+}
+
+
+
+
 
