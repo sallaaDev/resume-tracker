@@ -8,7 +8,7 @@ const User = mongoose.Schema({
 		lastName: String,
 		email: String,
 		googleId: String,
-		lastActive: Date,
+		lastActive: Date
 });
 
 //model user schema
