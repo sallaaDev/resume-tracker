@@ -2,6 +2,11 @@
   "name": "clinet",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/api/user": {
+      "target": "http://localhost:5000"
+    }
+  },
   "dependencies": {
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
