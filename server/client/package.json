@@ -1,9 +1,12 @@
 {
-  "name": "clinet",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "proxy": {
     "/api/user": {
+      "target": "http://localhost:5000"
+    },
+    "/auth/google": {
       "target": "http://localhost:5000"
     }
   },
@@ -11,6 +14,7 @@
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
