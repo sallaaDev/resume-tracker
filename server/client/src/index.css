@@ -2,10 +2,12 @@ body{
     margin: 0;
     color: #ffffff;
     background: #22c1c3;
-    background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  
     background: linear-gradient(to right, #fdbb2d, #22c1c3);
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .loginBtn {
