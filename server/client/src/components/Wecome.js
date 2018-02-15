@@ -21,7 +21,7 @@ const styles = {
 }
 }
 
-class SignIn extends Component {
+class Wecome extends Component {
   render() {
     return (
       <div>
@@ -39,4 +39,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default Wecome;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import SignIn from './components/SignIn';
+import Wecome from './components/Wecome';
 import Header from './components/Header';
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
-            <Route exact path='/' component={SignIn} />
+            <Route exact path='/' component={Wecome} />
           </div>
         </BrowserRouter>
       </div>
