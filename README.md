@@ -1,4 +1,4 @@
-# Resume tracker
+# Resume Tracker
 [![Resume tracker channel on discord](https://img.shields.io/badge/discord-%23general%20%40%20resumeTracker-61dafb.svg?style=flat-square)](https://discord.gg/nJs6S4N)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
 
