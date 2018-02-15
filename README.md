@@ -4,7 +4,7 @@
 
 Résumé Tracker is a JavaScript app for tracking your new job you apply to.  
 
-It makes tracking your job you applyed to easier and faster by automating the whole process. Run it anywhere you have access to a web browser. On top of that it has a native like feel do to reactJS frontend and material-ui smooth animation.
+It makes tracking the jobs you applied to easier and faster by automating the whole process. Run it anywhere you have access to a web browser. On top of that it has a native like feel due to ReactJS's frontend and material-ui's smooth animations.
 
 
 
@@ -12,7 +12,7 @@ It makes tracking your job you applyed to easier and faster by automating the wh
 
 We wrote Résumé Tracker because we couldn't find anything better online. Our goal was to create a job management system with simplicity at its core, so we created a universal app to track applications without user input.
 
-Résumé tracker evolved from our Philosophy on work it self. finding a job shouldn't be hard. We avoided all complexity by cutting out the unnecessary distraction on your side and automating all of at with our natural language processing AI. Whether you have used other services like is or not, Résumé tracker only takes a few seconds to get started with.
+Résumé tracker evolved from our philosophy on work it self. Finding a job shouldn't be hard. We avoided all complexity by cutting out the unnecessary distraction on your side and automating all of at with our natural language processing AI. Whether you have used other services like is or not, Résumé tracker only takes a few seconds to get started with.
 
 ## Get Started
 
