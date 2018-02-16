@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {AppBar, FlatButton, IconButton, Drawer, MenuItem} from 'material-ui';
+import {AppBar, IconButton, Drawer, MenuItem} from 'material-ui';
 import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
 import NavigationApps from 'material-ui/svg-icons/navigation/apps';
 

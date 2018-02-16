@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Wecome from './components/Wecome';
 import Header from './components/Header';
+import Welcome from './components/Welcome';
+import Dashboard from './components/Dashboard';
+
 class App extends Component {
   render() {
     return (
-      <div>
         <BrowserRouter>
-          <div>
+          <div className="container">
             <Header />
-            <Route exact path='/' component={Wecome} />
+            <Route exact path='/' component={Welcome} />
+            <Route exct path='/dashboard' component={Dashboard} />
           </div>
         </BrowserRouter>
-      </div>
     );
   }
 }
