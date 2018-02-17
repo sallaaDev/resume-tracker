@@ -55,8 +55,7 @@ class Dashboard extends Component {
               <TableRowColumn>Apr, 25 2018</TableRowColumn>
             </TableRow>
             <TableRow>
-              <TableRowColumn>
-              </TableRowColumn>
+              <TableRowColumn>5</TableRowColumn>
               <TableRowColumn>Linkedin</TableRowColumn>
               <TableRowColumn>Offer</TableRowColumn>
               <TableRowColumn>Mar, 5 2018</TableRowColumn>

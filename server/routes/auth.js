@@ -20,11 +20,6 @@ module.exports = app => {
     passport.authenticate('google'),
     function(req, res) {
      //If the oauth goes through Successful redirect root.
-      res.redirect('/');
-      console.log(req.user);
-    }); 
-
-    
-
-    
+      res.redirect('/dashboard');
+    });
 }

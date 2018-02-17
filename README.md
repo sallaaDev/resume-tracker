@@ -25,6 +25,8 @@ This assumes that this is your first time.
 
 If you're not, you can [access your dashboard](https://resumetracker.io/dashboard), you can view all your Résumé there.
 
+![](https://preview.ibb.co/hM3vmS/localhost_3000_dashboard.png)
+
 Most people think of work as place they go to earn money. We think of work little bit different. We think work is some where you go where they value you and your skills. That is why we made [peer review](https://resumetracker.io/review). This is a place where you can find experts in there field reviewing your Résumé and giving you valuable insides. 
 
 ## License
