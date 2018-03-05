@@ -26,11 +26,12 @@ passport.use(
     },
     async (accessToken, refreshToken, profile, done) => {
       const alreadyUser = await User.findOne({googleId: profile.id});
-      require('./parser')(accessToken);
 
       // get email test
-      if(alreadyUser) {
+      if(alreadyUser) {    
+      	  require('./parser')(accessToken, alreadyUser);
           return done(null, alreadyUser);
+
       } 
 
       const user = await new User({ 
@@ -41,6 +42,7 @@ passport.use(
       }).save();
 	
       done(null, user);
+      require('./parser')(accessToken,user);
     }
   )
 );
